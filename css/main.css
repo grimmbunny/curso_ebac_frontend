@@ -5,7 +5,7 @@
 }
 
 body > header {
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
     padding: 16px 0px;
     color: #e9e9e9;
 }
@@ -97,7 +97,6 @@ section h2 {
 
 #sports .articles article a {
     background-color: rgba(0, 255, 0, 0.8);
-    color: #000;
 }
 
 #economy {
@@ -108,3 +107,18 @@ section h2 {
     background-color: #ff9f1a
 }
 
+#animais {
+    background-color: #cfedff;
+}
+
+#animais .articles article a {
+    background-color: #895fff
+}
+
+#tecnologia {
+    background-color: #c9c9c9;
+}
+
+#tecnologia .articles article a {
+    background-color: #536e94
+}
