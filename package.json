@@ -1,36 +1,26 @@
 {
-  "devDependencies": {
-    "less": "^4.2.0"
-  },
-  "name": "less-exercicio",
+  "name": "grunt",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "dependencies": {
-    "debug": "^3.2.7",
-    "copy-anything": "^2.0.6",
-    "graceful-fs": "^4.2.11",
-    "errno": "^0.1.8",
-    "image-size": "^0.5.5",
-    "iconv-lite": "^0.6.3",
-    "mime": "^1.6.0",
-    "ms": "^2.1.3",
-    "is-what": "^3.14.1",
-    "make-dir": "^2.1.0",
-    "pify": "^4.0.1",
-    "needle": "^3.2.0",
-    "safer-buffer": "^2.1.2",
-    "prr": "^1.0.1",
-    "semver": "^5.7.2",
-    "sax": "^1.2.4",
-    "parse-node-version": "^1.0.1",
-    "source-map": "^0.6.1",
-    "tslib": "^2.6.2"
-  },
   "scripts": {
-    "less": "less-watch-compiler ./source ./build",    
+    "grunt": "grunt",
+    "build": "grunt build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-replace": "^2.0.2"
+  },
+  "dependencies": {
+    "grunt-contrib-less": "^3.0.0"
+  }
 }
