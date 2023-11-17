@@ -1,21 +1,20 @@
-function Animal(nome, tipo, som) {
-        this.nome = nome;
-        this.tipo = tipo;
-        this.som = som;
-        this.SomAnimal = function() {
-            console.log(this.nome +" "+ "diz" +" " + som);
-        }
-    }
 
-    const Cachorro = new Animal("cachorro", "canino", "auau");
-    const Gato = new Animal("gato", "felino", "miau");
-    const Rato = new Animal("rato", "roedor", "squeak");
+let alunos = [];
 
-    console.log(Cachorro);
-    console.log(Gato);
-    console.log(Rato);
+console.log(alunos);
 
 
-    Cachorro.SomAnimal();
-    Gato.SomAnimal();
-    Rato.SomAnimal();
+alunos.push({nome: 'Paulo', nota: 5})
+alunos.push({nome: 'Gustavo', nota: 8})
+alunos.push({nome: 'Michele', nota: 4})
+alunos.push({nome: 'Laila', nota: 6})
+
+console.log(alunos);
+
+function filtraAlunosNotaSeisOuMais(aluno) {
+    return aluno.nota >= 6;
+}
+
+const notaSeisOuMais = alunos.filter(filtraAlunosNotaSeisOuMais)
+
+console.log(notaSeisOuMais);
